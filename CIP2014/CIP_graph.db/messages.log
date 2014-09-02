@@ -1,0 +1,316 @@
+2014-07-09 15:40:10.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2014-07-09 15:40:10.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=221M
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=61M
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=271M
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=188M
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=CIP_graph.db
+2014-07-09 15:40:10.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=213M
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: NodeCache
+2014-07-09 15:40:10.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: RelationshipCache
+2014-07-09 15:40:10.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2014-07-09 15:40:10.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 15,88 GB
+2014-07-09 15:40:10.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 12,14 GB
+2014-07-09 15:40:10.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 536,84 MB
+2014-07-09 15:40:10.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 31,76 GB
+2014-07-09 15:40:10.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 27,60 GB
+2014-07-09 15:40:10.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2014-07-09 15:40:10.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 199,74 MB
+2014-07-09 15:40:10.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 243,50 MB
+2014-07-09 15:40:10.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 3,53 GB
+2014-07-09 15:40:10.770+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2014-07-09 15:40:10.770+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+2014-07-09 15:40:10.771+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=642,88 kB, max=48,00 MB, threshold=0,00 B
+2014-07-09 15:40:10.771+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=64,00 MB, used=3,12 MB, max=1,30 GB, threshold=?
+2014-07-09 15:40:10.771+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=10,50 MB, used=4,48 MB, max=10,50 MB, threshold=?
+2014-07-09 15:40:10.772+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=169,00 MB, used=36,15 MB, max=2,65 GB, threshold=0,00 B
+2014-07-09 15:40:10.772+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Perm Gen (Non-heap memory): committed=21,00 MB, used=8,81 MB, max=82,00 MB, threshold=0,00 B
+2014-07-09 15:40:10.772+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2014-07-09 15:40:10.772+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 8
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 5572@geostergiop-PC
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Athens
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.45-b08
+2014-07-09 15:40:10.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2014-07-09 15:40:10.774+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-Dfile.encoding=UTF-8]
+2014-07-09 15:40:10.774+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2014-07-09 15:40:10.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar
+2014-07-09 15:40:10.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/json/json/20090211/json-20090211.jar
+2014-07-09 15:40:10.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/codehaus/jettison/jettison/1.3.3/jettison-1.3.3.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/concurrent/concurrent/1.3.4/concurrent-1.3.4.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/sunec.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/colt/colt/1.2.0/colt-1.2.0.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/net/sourceforge/collections/collections-generic/4.01/collections-generic-4.01.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/io/netty/netty/3.6.3.Final/netty-3.6.3.Final.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/net/sf/jung/jung-api/2.0.1/jung-api-2.0.1.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/localedata.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-consistency-check/1.9.6/neo4j-consistency-check-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/net/sf/jung/jung-algorithms/2.0.1/jung-algorithms-2.0.1.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-lucene-index/1.9.6/neo4j-lucene-index-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/ch/qos/logback/logback-core/0.9.30/logback-core-0.9.30.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-cypher/1.9.6/neo4j-cypher-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/ch/qos/logback/logback-classic/0.9.30/logback-classic-0.9.30.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-backup/1.9.6/neo4j-backup-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/tinkerpop/blueprints/blueprints-core/2.5.0/blueprints-core-2.5.0.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-management/1.9.6/neo4j-management-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/access-bridge-64.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-graph-matching/1.9.6/neo4j-graph-matching-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-ha/1.9.6/neo4j-ha-1.9.6.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/dnsns.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.2/jackson-annotations-2.2.2.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\classes
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/zipfs.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar
+2014-07-09 15:40:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-com/1.9.6/neo4j-com-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/net/sf/jung/jung-visualization/2.0.1/jung-visualization-2.0.1.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/sunmscapi.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/jaccess.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-json-org/2.2.3/jackson-datatype-json-org-2.2.3.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/workspace/CIP2014/target/classes/
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-cluster/1.9.6/neo4j-cluster-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.2/jackson-core-2.2.2.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/apache/zookeeper/zookeeper/3.3.2/zookeeper-3.3.2.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/tinkerpop/blueprints/blueprints-graph-jung/2.5.0/blueprints-graph-jung-2.5.0.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_45/jre/lib/ext/sunjce_provider.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-graph-algo/1.9.6/neo4j-graph-algo-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/com/tinkerpop/blueprints/blueprints-neo4j-graph/2.5.0/blueprints-neo4j-graph-2.5.0.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-udc/1.9.6/neo4j-udc-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-jmx/1.9.6/neo4j-jmx-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/geostergiop/.m2/repository/org/neo4j/neo4j-kernel/1.9.6/neo4j-kernel-1.9.6.jar
+2014-07-09 15:40:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2014-07-09 15:40:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.7.0_45\bin
+2014-07-09 15:40:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2014-07-09 15:40:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2014-07-09 15:40:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2014-07-09 15:40:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\iCLS Client
+2014-07-09 15:40:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\iCLS Client
+2014-07-09 15:40:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2014-07-09 15:40:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2014-07-09 15:40:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2014-07-09 15:40:10.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2014-07-09 15:40:10.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86
+2014-07-09 15:40:10.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64
+2014-07-09 15:40:10.800+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2014-07-09 15:40:10.800+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2014-07-09 15:40:10.800+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2014-07-09 15:40:10.801+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2014-07-09 15:40:10.801+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.7.0_45\bin
+2014-07-09 15:40:10.801+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\geostergiop\Dropbox\programs\apache-ant-1.9.4\bin
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.7.0_45\jre\lib
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\geostergiop\workspace\CIP2014
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_45\jre\bin
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country.format = GR
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = US
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = Service Pack 1
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Users\geostergiop\workspace\CIP2014
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = Cp1253
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\geostergiop
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Athens
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = geostergiop
+2014-07-09 15:40:10.802+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = gr.aueb.CIP2014.App
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = en
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language.format = el
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2014-07-09 15:40:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (SSTP):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (L2TP):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPTP):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPPOE):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP):
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface RAS Async Adapter:
+2014-07-09 15:40:10.855+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IKEv2):
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe GBE Family Controller:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 172.16.10.24
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:f853:adc:bb0c:d507%11
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:ac10:a18%12
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:100:7f:fffe%13
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe GBE Family Controller - VirtualBox Bridged Networking Driver Miniport:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.56.1
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:fd43:28bd:b5ee:2e6e%15
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #2:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:3801%16
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet1:
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.140.1
+2014-07-09 15:40:10.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:20c5:9aa0:2c41:a41e%17
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #3:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:8c01%18
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet8:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.118.1
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:19a2:5e46:1204:16be%19
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #4:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:7601%20
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP LightWeight Filter-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe GBE Family Controller - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe GBE Family Controller - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+2014-07-09 15:40:10.857+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2014-07-09 15:40:10.957+0000 INFO  [o.n.k.i.n.s.StoreFactory]: Creating new db @ CIP_graph.db\neostore
+2014-07-09 15:40:11.117+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2014-07-09 15:40:11.155+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2014-07-09 15:40:11.870+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-07-09 15:40:11.876+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:11.905+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:11.997+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.098+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-07-09 15:40:12.099+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:12.100+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2014-07-09 15:40:12.102+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-07-09 15:40:12.104+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:12.106+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2014-07-09 15:40:12.111+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2014-07-09 15:40:12.114+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841630b mappedMem=284164096b (storeSize=0b)
+2014-07-09 15:40:12.115+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2014-07-09 15:40:12.116+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:12.149+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.292+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.392+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.486+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.555+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.647+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.822+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:12.947+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:13.022+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2014-07-09 15:40:13.122+0000 INFO  [o.n.k.i.n.s.StoreFactory]: CIP_graph.db\neostore hit=0 miss=8 switches=0 ooe=0
+2014-07-09 15:40:13.189+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-07-09 15:40:13.190+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:13.192+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2014-07-09 15:40:13.193+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-07-09 15:40:13.194+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-07-09 15:40:13.195+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2014-07-09 15:40:13.196+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2014-07-09 15:40:13.197+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841630b mappedMem=284164096b (storeSize=0b)
+2014-07-09 15:40:13.198+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2014-07-09 15:40:13.201+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [CIP_graph.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-07-09 15:40:13.229+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [CIP_graph.db\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2014-07-09 15:40:13.259+0000 INFO  [o.n.k.i.t.TxManager]: TM new log: tm_tx_log.1
+2014-07-09 15:40:14.144+0000 INFO  [o.n.b.BackupServer]: BackupServer communication server started and bound to 0.0.0.0/0.0.0.0:6362
+2014-07-09 15:40:14.163+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [CIP_graph.db\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2014-07-09 15:40:14.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-07-09 15:40:14.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1404920410957, id:6841884452877061276, store version: 13561656364791302]
+2014-07-09 15:40:14.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel 1.9.6
+2014-07-09 15:40:14.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2014-07-09 15:40:14.193+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel 1.9.6
+2014-07-09 15:40:14.193+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-07-09 15:40:14.194+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.0
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-07-09 15:40:14.195+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=1 high=0
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1 high=0
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-07-09 15:40:14.196+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-07-09 15:40:14.199+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 1000202039296 / 890037633024 / 88
+Storage files: (filename : modification date - size)
+2014-07-09 15:40:14.199+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2014-07-09T18:40:13+0300 - 11,00 B
+2014-07-09 15:40:14.200+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2014-07-09 15:40:14.200+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2014-07-09T18:40:14+0300 - 40,00 B
+2014-07-09 15:40:14.200+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2014-07-09T18:40:14+0300 - 16,00 B
+2014-07-09 15:40:14.201+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2014-07-09T18:40:14+0300 - 4,00 B
+2014-07-09 15:40:14.201+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-07-09T18:40:14+0300 - 60,00 B
+2014-07-09 15:40:14.201+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2014-07-09T18:40:10+0300 - 0,00 B
+2014-07-09 15:40:14.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2014-07-09T18:40:12+0300 - 36,26 kB
+2014-07-09 15:40:14.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2014-07-09T18:40:13+0300 - 54,00 B
+2014-07-09 15:40:14.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2014-07-09T18:40:13+0300 - 9,00 B
+2014-07-09 15:40:14.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2014-07-09T18:40:13+0300 - 9,00 B
+2014-07-09 15:40:14.203+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2014-07-09T18:40:13+0300 - 9,00 B
+2014-07-09 15:40:14.203+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2014-07-09T18:40:13+0300 - 0,00 B
+2014-07-09 15:40:14.204+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2014-07-09T18:40:13+0300 - 128,00 B
+2014-07-09 15:40:14.204+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.205+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.205+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2014-07-09T18:40:13+0300 - 0,00 B
+2014-07-09 15:40:14.205+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.206+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2014-07-09T18:40:13+0300 - 38,00 B
+2014-07-09 15:40:14.206+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.206+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2014-07-09T18:40:13+0300 - 128,00 B
+2014-07-09 15:40:14.207+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.207+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2014-07-09T18:40:13+0300 - 0,00 B
+2014-07-09 15:40:14.207+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.208+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2014-07-09T18:40:13+0300 - 0,00 B
+2014-07-09 15:40:14.208+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.208+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2014-07-09T18:40:13+0300 - 38,00 B
+2014-07-09 15:40:14.209+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2014-07-09T18:40:12+0300 - 9,00 B
+2014-07-09 15:40:14.209+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2014-07-09T18:40:14+0300 - 16,00 B
+2014-07-09 15:40:14.209+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2014-07-09T18:40:13+0300 - 4,00 B
+2014-07-09 15:40:14.210+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2014-07-09T18:40:10+0300 - 0,00 B
+2014-07-09 15:40:14.210+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2014-07-09T18:40:13+0300 - 0,00 B
+2014-07-09 15:40:14.210+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-07-09 15:40:14.211+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2014-07-09 15:40:14.212+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
