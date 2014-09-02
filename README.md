@@ -1,7 +1,7 @@
 CIDA
 ====
 
-CIDA, a Critical Infrastructure Dependency Analysis tool, which is based on an extended version of a risk-based methodology [1]–[3] using graph modeling. CIDA aims to support decision makers to analyze and assess dependency risk paths for complex and large-scale scenarios of interdependent CIs belonging to different sectors.
+CIDA, a Critical Infrastructure Dependency Analysis tool, which is based on an extended version of a risk-based methodology, using graph modeling. CIDA aims to support decision makers to analyze and assess dependency risk paths for complex and large-scale scenarios of interdependent CIs belonging to different sectors.
 
 Two program versions:
 
