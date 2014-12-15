@@ -11,4 +11,5 @@ Two program versions:
 Both application are in alpha stage of development.
 
 Method development: George Stergiopoulos, Panagiotis Kotzanikolaou, Marianthi Theocharidou, Dimitris Gritzalis
+
 Programming (Java): George Stergiopoulos
