@@ -6,7 +6,7 @@ CIDA, a Critical Infrastructure Dependency Analysis tool, which is based on an e
 Two program versions:
 
 1. CIP2014 is the random stress test calculator, for stress testing the method developed.
-2. CIPGUI2014 is a GUI application for creating models and calculating Risk dependency paths.
+2. CIPTIMEFL is a GUI application for creating models and calculating Risk dependency paths.
 
 Both application are in alpha stage of development.
 
