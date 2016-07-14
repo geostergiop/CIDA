@@ -49,7 +49,8 @@ public class StringFormatting {
 				for (double l : likelihoods){
 					currLikelihood = currLikelihood * l;
 				}
-				double impact_T = ((double[])r.getProperty("impact"))[impactTimeSlot];
+				double[] temp = (double[])(r.getProperty("impact"));
+				double impact_T = (double)temp[impactTimeSlot];
 				double cRisk = currLikelihood * (impact_T);
 				r.setProperty("cRisk", cRisk);
 				

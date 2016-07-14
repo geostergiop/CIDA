@@ -20,8 +20,6 @@ import java.io.Writer;
 import java.util.List;
 import java.util.TreeMap;
 
-import com.tinkerpop.blueprints.impls.neo4j.Neo4jVertex;
-
 public class IO {
 	
 	public static void writeBuffered(List<WP> records, int bufSize, int impactTimeSlot) throws IOException {

@@ -4,7 +4,13 @@ import java.awt.Event;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Node;
+import org.neo4j.graphdb.Relationship;
+import org.neo4j.graphdb.Transaction;
+
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
@@ -18,6 +24,7 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Text;
@@ -25,11 +32,7 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
-
-
 import org.eclipse.swt.widgets.Combo;
-
-import com.tinkerpop.blueprints.impls.neo4j.Neo4jVertex;
 
 
 public class MainGUI {
@@ -49,6 +52,7 @@ public class MainGUI {
 	private static Button btnAddConnection;
 	private static Button btnClearAll;
 	private static Button btnAddCi;
+	private Shell cipGui;
 	
 	private static String vertexExists = null;
 	private static boolean edgeExists = false;
@@ -56,12 +60,28 @@ public class MainGUI {
 	private static Text edgeImpact;
 	private static Text edgeLikelihood;
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void main(String[] args) {
+	      // Run GUI codes in Event-Dispatching thread for thread safety
+	      SwingUtilities.invokeLater(new Runnable() {
+	         @Override
+	         public void run() {
+	            new MainGUI();  // Let the constructor do the job
+	         }
+	      });
+	   }
+	
+	/**
+	 * @wbp.parser.entryPoint
+	 */
+	public MainGUI() {
 		
 		/*************************	GUI STUFF	*****************************/
 		Display display = new Display();
-        Shell cipGui = new Shell(display);
-        cipGui.setText("CIP Graph Calculator v0.1");
+        cipGui = new Shell(display, SWT.TITLE | SWT.CLOSE | SWT.BORDER & SWT.SHELL_TRIM & (~SWT.RESIZE));
+        cipGui.setText("CIDA - Critical Infrastructure Dependency Analysis Tool");
         cipGui.setSize(556, 578);
         cipGui.setLayout(new GridLayout(1, false));
         
@@ -123,13 +143,27 @@ public class MainGUI {
         cis.setBounds(0, 0, 256, 189);
         cis.setHeaderVisible(true);
         cis.setLinesVisible(true);
+        String[] titles = { "Name", "Sector"};
+        for (int i = 0; i < titles.length; i++) {
+        	TableColumn cicol = new TableColumn(cis, SWT.RIGHT);
+            cicol.setText(titles[i]);
+        }
+        for (int i=0; i<titles.length; i++) {
+            cis.getColumn (i).pack ();
+        }  
         
         connections = new Table(tablesWithInsertedStuff, SWT.BORDER | SWT.FULL_SELECTION);
         connections.setBounds(274, 0, 256, 189);
         connections.setHeaderVisible(true);
         connections.setLinesVisible(true);
-        TableItem item = new TableItem(connections, SWT.NONE);
-        item.setText(new String[] {"Column1 text","Column2 text"});
+        String[] titles2 = { "Dependency", "Impact", "Rate"};
+        for (int i = 0; i < titles2.length; i++) {
+        	TableColumn conncol = new TableColumn(connections, SWT.RIGHT);
+            conncol.setText(titles2[i]);
+        }
+        for (int i=0; i<titles2.length; i++) {
+        	connections.getColumn(i).pack ();
+        }  
         connections.addListener(SWT.Selection, new Listener() {
         	@Override
         	public void handleEvent(org.eclipse.swt.widgets.Event e) {
@@ -258,6 +292,11 @@ public class MainGUI {
 		        				edgeExists = true;
 		        				JOptionPane.showMessageDialog(null, "Connection created.", 
 		        						"NOTICE", JOptionPane.INFORMATION_MESSAGE);
+		        				// Update GUI List
+		        				TableItem item = new TableItem(connections, SWT.NONE);
+		            			item.setText(0,sCI+" --"+growth+"--> "+dCI);
+		            			item.setText(1,Double.toString(impact));
+		            			item.setText(2, growth);
 		        			}
 		        			
 	        			}catch (NumberFormatException n) {
@@ -333,7 +372,8 @@ public class MainGUI {
         		String path = JOptionPane.showInputDialog(null, "Enter directory from which to load graph:", "Notification", JOptionPane.INFORMATION_MESSAGE);
         		run = new App();
     			//Create new graph item
-        		if (run.loadGraph(path)) {
+        		GraphDatabaseService graphDb = run.loadGraph(path);
+        		if (graphDb != null) {
         			enableAllInput = true;
         			vertexExists = "";
         			edgeExists = true;
@@ -345,11 +385,29 @@ public class MainGUI {
         			connectionType.setEnabled(true);
         			timeLimit.setEnabled(true);
         			growthR.setEnabled(true);
-        			TreeMap<String, Neo4jVertex> CIs = run.getCIs();
-        			for(Map.Entry<String,Neo4jVertex> entry1 : CIs.entrySet()) {
-        				Neo4jVertex vertex = entry1.getValue();
-        				sourceCI.add(vertex.getProperty("CI_ID")+"|"+vertex.getProperty("substation_id"));
-        				destCI.add(vertex.getProperty("CI_ID")+"|"+vertex.getProperty("substation_id"));
+        			TreeMap<String, Node> CIs = run.getCIs();
+        			
+        			Transaction tx = graphDb.beginTx();
+        			try {
+        				for(Map.Entry<String,Node> entry1 : CIs.entrySet()) {
+        					Node vertex = entry1.getValue();
+        					sourceCI.add(vertex.getProperty("CI_ID")+"|"+vertex.getProperty("substation_id"));
+        					destCI.add(vertex.getProperty("CI_ID")+"|"+vertex.getProperty("substation_id"));
+        					// Update GUI CI Table
+                			TableItem item = new TableItem(cis, SWT.NONE);
+                			item.setText(0,(String)vertex.getProperty("substation_id"));
+                			item.setText(1,(String)vertex.getProperty("ci_sector"));
+        				}
+        				// Update GUI Relationships
+        				for (Relationship edge : graphDb.getAllRelationships()) {
+	        				TableItem conn = new TableItem(connections, SWT.NONE);
+	        				conn.setText(0,edge.getStartNode().toString()+" --"+edge.getType().name()+"--> "+edge.getEndNode().toString());
+	        				double[] impact = (double[])edge.getProperty("impact");
+	        				conn.setText(1,Double.toString(impact[impact.length-1]));
+        				}
+        				tx.success();
+        			} finally {
+        				tx.close();
         			}
         		}
         	}
@@ -384,7 +442,8 @@ public class MainGUI {
         btnAddCi.setEnabled(false);
         btnAddCi.addSelectionListener(new SelectionAdapter() {
         	@Override
-        	public void widgetSelected(SelectionEvent e) {      		
+        	public void widgetSelected(SelectionEvent e) { 
+        		String selectedSector = null;
         		// Check input data are complete
         		if(checkInputIsOk() && run != null) {
         			String strIsInit = inputIsInit.getText();
@@ -394,7 +453,8 @@ public class MainGUI {
         			else
         				isInit = false;
         			// Add a new C.I. Vertex to graph with all input data provided by the user
-        			vertexExists = run.addVertexToGraph(dropdownSectors.getItem(dropdownSectors.getSelectionIndex()),
+        			selectedSector = dropdownSectors.getItem(dropdownSectors.getSelectionIndex());
+        			vertexExists = run.addVertexToGraph(selectedSector,
         					inputSubsector.getText(), inputSubstation.getText(), 
         					inputLatitude.getText(), inputLongtitude.getText(),
         					isInit);
@@ -415,6 +475,12 @@ public class MainGUI {
         			connectionType.setEnabled(true);
         			timeLimit.setEnabled(true);
         			growthR.setEnabled(true);
+        			
+        			// Update GUI TableItem
+        			TableItem item = new TableItem(cis, SWT.NONE);
+        			item.setText(0,vertexExists);
+        			item.setText(1,selectedSector);
+        			//cipGui.update();
         		}
         	}
         });

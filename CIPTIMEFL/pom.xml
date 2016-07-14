@@ -4,7 +4,7 @@
 
 	<groupId>gr.aueb</groupId>
 	<artifactId>CIPGUI2014</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.8.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>CIPGUI2014</name>
@@ -28,10 +28,10 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -42,31 +42,48 @@
 	</properties>
 
 	<dependencies>
+		<!-- http://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160212</version>
 		</dependency>
-		<dependency>
-			<groupId>com.tinkerpop.blueprints</groupId>
-			<artifactId>blueprints-core</artifactId>
-			<version>2.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tinkerpop.blueprints</groupId>
-			<artifactId>blueprints-neo4j-graph</artifactId>
-			<version>2.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tinkerpop.blueprints</groupId>
-			<artifactId>blueprints-graph-jung</artifactId>
-			<version>2.5.0</version>
-		</dependency>
+		<!-- http://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
+			<version>2.5</version>
 		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.neo4j/neo4j-io -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-io</artifactId>
+			<version>3.1.0-M03</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.neo4j/neo4j -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>3.1.0-M03</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.neo4j/neo4j-kernel -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-kernel</artifactId>
+			<version>3.1.0-M03</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.neo4j/neo4j-graph-algo -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-graph-algo</artifactId>
+			<version>3.1.0-M03</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.7</version>
+		</dependency>
+
 	</dependencies>
 </project>
